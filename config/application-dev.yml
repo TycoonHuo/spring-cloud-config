@@ -1,0 +1,46 @@
+这里是dev
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8888
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: git@172.20.13.121:huoguangyao/spring-cloud-config.git
+          passphrase: -----BEGIN RSA PRIVATE KEY-----
+            MIIEogIBAAKCAQEAnLZRIAOqmFjy0TlKhDbr4oFfVoqHttYNjiCrFC2w0APY8KYM
+            7vA5twZjkXnsmoZKkArciab72JGYzPC8skWjxTksDYHFATY0NvJ1jTNrSa0bT6gQ
+            JilJD3zSCTpxzCNxQUNDA7dmnssX5Xq6sLzPHvaOiF+GCTjGgdjDugpsimWR7efW
+            K9XUJ/QEFsCyAMIOm4WEZL286/fgdYrm2ZgIqdo18shsVYKBjYm449UnxrgFnlbw
+            cZhQbicM8TNhn5ShAZl2iw0xmEjzCk/na/6JWVS/Ref2xonZUs6xzhH2oTYTowkB
+            Lp75rGKbsNe7CQ4vgUVpVoyTgdTaKkZiJZCPRwIDAQABAoIBAD1qZhi51x2lnmPI
+            pB90trUqJobv+4f4E4/j1aguz+B14YtOSDtMAhJsepEEy2kzv/z7hLqdqo2RYeTP
+            Y+Qpzqj4Yv9YIDD9YTE3jEIuKJnTMaTiJJIQFAXx0Q60zOxH55bAGX9XXOxWg6L3
+            mjqxhCqKTgm8BfePPJyeqvY6J5eE4bClVVOZFjW6C3M5BD6uTU/Fenq6RzVCu3yH
+            OI7RQvlUboOPAWnbCX7T1UJAweQrigqeRQ0iwKIzFXUXTKaI5u3Nt0k0XSREXa6W
+            1/g2tC7FxDtACH9GD9a0DV30aYW5umGkItF9m0vHNLTMk9DamjhcwjeZhG2Pe3UZ
+            jsYrKIECgYEA0IsrwAxzzxs9y48gWJ/wEwaLvz/0ZdE0p8UYpmg7skSWFio1GoLX
+            daglnZIaf9bsPz6nPq0f/eOASYiPOgqcDyol6GIwb5bx2ECqbhSR8YA6UAUK6NsZ
+            V9oDhuD7SHw6fmImsxcQPgbO1zHGUujy2cEyEeRccgy1REo5E04WyjcCgYEAwF+s
+            rWCBTIwC9Q76Qmqkffkt0Ro2rp86gKkVWIDkO9EeP/91zoZvDMEtNLwo5JGH73UX
+            y87WhAKAQMurMbC+i6KJ3wZrOhW8/adaiMe/t2jkV4+aPHQ0gvB7Y4U2Lp8cCRRn
+            n30ZoR6295vNBmRMgL1VsrP5jKzIGjH5GHZ+m3ECgYAxSlOi5s6Qiv3GGSQqDlNu
+            C8QIBhO75QCvDrTO0CAb+H4I6xz2ESrf0khhv+CniqL4J9TbyYugNJ9jwfUoYM2V
+            //5JuLt+BI1Q8afWsOH11Lrzot17QB3zV8IxpQd/kG065fQDrFXYcz98OXWIryqH
+            MVSmSfVXt404gNqQp4pXbQKBgGzvwOENXSrzvlj3elBSA4QyrvdSWNTZ5k8lcKkF
+            lDkrWm3zQ8sH5arbWbYbNyz4HHpFXIxVPLTUlbwbmX4yEDUSffCFugLSfItHUcVT
+            GAXMqEHNWBIT3AiqFbVtohkUkNOzclqmhPTwZ7wfxiJwecINdZIUyKQY09fBpMVt
+            lJSBAoGAcfEyn3hfmiv3IdDMzDCvb6XzuZjFetZq/LLRwePbg1rhDT4p6FPzqw5q
+            wCNCh6X3CaIsbHpgWEa7LBUZ3a3pAM+Y7MCwP+3rzEaxhhr5jkDgAe+EIlJ/gVLj
+            tue1jcIPsS6tT9T+aiEMK81zeuV4sK7mn3yWlXqe6pH+ZxUM0Ww=
+            -----END RSA PRIVATE KEY-----
+          search-paths: config
