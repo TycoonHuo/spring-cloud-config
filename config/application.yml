@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8791/eureka
+server:
+  port: 8888
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/TycoonHuo/spring-cloud-config.git
+          username: 809590403@qq.com
+          password: HGYloveSUN1314
